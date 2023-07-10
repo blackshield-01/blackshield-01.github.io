@@ -16,25 +16,7 @@
 
 <button onclick="window.location.href='https://www.linkedin.com/in/michelle-pang-ym/';">LinkedIn</button>
 <button onclick="window.location.href='https://github.com/michellepang-01?tab=repositories';">GitHub</button>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
-<script>
-  function displayPDF() {
-    var pdfUrl = "/Users/michellepang/Documents/GitHub/michellepang-01.github.io/Pang,%20Michelle%20-%20Resume.pdf";
-    var viewerContainer = document.getElementById("pdfViewer");
-    PDFJS.getDocument(pdfUrl).then(function (pdf) {
-      pdf.getPage(1).then(function (page) {
-        var canvas = document.createElement("canvas");
-        var context = canvas.getContext("2d");
-        var viewport = page.getViewport({ scale: 1 });
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
-        viewerContainer.appendChild(canvas);
-        page.render({ canvasContext: context, viewport: viewport });
-      });
-    });
-  }
-</script>
-<button onclick='displayPDF()'>Resume</button>
+<button onclick="location.href='Documents/GitHub/michellepang-01.github.io/Pang_Michelle_Resume.pdf';">Resume</button>
 <button onclick="window.location.href='mailto: michellepang@g.ucla.edu';">Email</button>
 <!-- <button onclick="window.location.href=' ';">YouTube</button> -->
 
